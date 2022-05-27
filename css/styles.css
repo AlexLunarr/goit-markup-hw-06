@@ -640,6 +640,9 @@ img {
 .address-item-link:focus {
   color: var(--color-hover);
 }
+.social {
+  margin-right: 93px;
+}
 
 .social-text {
   display: block;
@@ -683,6 +686,26 @@ img {
 .social-icon-link:hover,
 .social-icon-link:focus {
   background-color: var(--color-hover);
+}
+
+.e-mail-input__text {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+
+  color: var(--color-logo-three);
+}
+
+.e-mail-input__form {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*  Основной контент portfolio */
 /* Кнопки */
