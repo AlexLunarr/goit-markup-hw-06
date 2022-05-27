@@ -323,12 +323,16 @@ img {
 }
 
 .modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
   top: 50%;
   left: 50%;
 
   min-width: 528px;
-  min-height: 581px;
+  /* min-height: 581px; */
 
   background: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -363,6 +367,8 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 40px;
+  width: 100%;
 }
 .backdrop__title {
   font-weight: 700;
@@ -376,9 +382,8 @@ img {
 .form {
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
+
+  margin-top: 12px;
   width: 100%;
 }
 .form-textarea {
@@ -386,31 +391,86 @@ img {
 }
 
 .form-field {
+  position: relative;
   display: flex;
   flex-direction: column;
-  outline: 1px solid tomato;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--color-text);
 }
-.form-field.checkbox {
+.form-field + .form-field {
+  margin-top: 10px;
+}
+.form-label {
+  margin-bottom: 4px;
+}
+.form-input {
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-svg-cont {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.form-svg {
+  position: absolute;
+  transform: translate(0, 50%);
+  bottom: 50%;
+  left: 11px;
+}
+.form-textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  min-height: 120px;
+}
+.checkbox {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+
   display: flex;
   flex-direction: row;
-  outline: 1px solid tomato;
-  align-items: center;
-}
-.form-field.button {
-  display: flex;
-  outline: 1px solid tomato;
   align-items: center;
   justify-content: center;
 }
-.form-input.checkbox {
+
+.checkbox-input {
+  margin-right: 7px;
   width: 16px;
   height: 15px;
 }
 .form-button {
-  width: 200px;
-  height: 50px;
-  display: block;
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+  border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-button-one);
+
+  background-color: var(--background-color-button);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
 }
+
 /* <!-- Характеристики --> */
 .character {
   padding-top: 94px;
