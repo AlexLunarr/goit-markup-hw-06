@@ -358,6 +358,59 @@ img {
   background: #ffffff;
 }
 
+.backdrop__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.backdrop__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+.form-textarea {
+  resize: none;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid tomato;
+}
+.form-field.checkbox {
+  display: flex;
+  flex-direction: row;
+  outline: 1px solid tomato;
+  align-items: center;
+}
+.form-field.button {
+  display: flex;
+  outline: 1px solid tomato;
+  align-items: center;
+  justify-content: center;
+}
+.form-input.checkbox {
+  width: 16px;
+  height: 15px;
+}
+.form-button {
+  width: 200px;
+  height: 50px;
+  display: block;
+}
 /* <!-- Характеристики --> */
 .character {
   padding-top: 94px;

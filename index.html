@@ -77,6 +77,72 @@
               <use href="./images/icons.svg#modal-button"></use>
             </svg>
           </button>
+          <div class="backdrop__form">
+            <h2 class="backdrop__title">
+              Оставьте свои данные, мы вам перезвоним
+            </h2>
+            <form class="form">
+              <div class="form-field">
+                <label for="name" class="form-label">Имя</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  autofocus
+                />
+              </div>
+              <div class="form-field">
+                <label for="telephone" class="form-label">Телефон</label>
+                <input
+                  class="form-input"
+                  type="tel"
+                  name="telephone"
+                  id="telephone"
+                />
+              </div>
+              <div class="form-field">
+                <label for="email" class="form-label">Почта</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+
+              <div class="form-field">
+                <label for="comment" class="form-label form-label-text"
+                  >Комментарий</label
+                >
+                <textarea
+                  class="form-textarea"
+                  type="text"
+                  name="comment"
+                  id="comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+
+              <div class="form-field checkbox">
+                <input
+                  class="form-input checkbox"
+                  type="checkbox"
+                  name="license"
+                  value="license"
+                  id="license"
+                  class="form-input checkbox"
+                />
+                <label for="license" form-label form-label-license
+                  >Соглашаюсь с рассылкой и принимаю
+                  <a href="">Условия договора</a></label
+                >
+              </div>
+              <div class="form-field button">
+                <button type="submit" class="form-button">Отправить</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <!-- Характеристики -->
@@ -463,7 +529,19 @@
           </div>
           <div class="e-mail-input">
             <strong class="e-mail-input__text">Подпишитесь на рассылку</strong>
-            <div class="e-mail-input__form"></div>
+            <div class="e-mail-input__form">
+              <form>
+                <input type="email" name="email" id="email" />
+                <label for="email">Email</label>
+                <button type="submit">
+                  Подписаться<span
+                    ><svg width="24" height="24">
+                      <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                  </span>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
