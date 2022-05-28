@@ -360,8 +360,13 @@ img {
   border-radius: 50%;
 
   background: #ffffff;
+  transition: fill var(--time) var(--cubic);
 }
 
+.modal-button:hover,
+.modal-button:focus {
+  fill: var(--color-hover);
+}
 .backdrop__form {
   display: flex;
   flex-direction: column;
@@ -401,19 +406,25 @@ img {
   letter-spacing: 0.01em;
   color: var(--color-text);
   cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.form-input:hover,
-.form-input:focus,
-.form-textarea:hover,
-.form-textarea:focus {
-  border-color: var(--color-hover);
-  border: 1px solid var(--color-hover);
-}
-.form-input:hover ~ .form-svg,
-.form-input:focus ~ .form-svg {
+.form-field:focus-within > .form-svg {
   fill: var(--color-hover);
+}
+.form-field:focus-within > .form-input {
+  border-color: var(--color-hover);
+}
+.form-field:hover > .form-svg {
+  fill: var(--color-hover);
+}
+.form-field:hover > .form-input {
+  border-color: var(--color-hover);
+}
+.form-field:focus-within > .form-textarea {
+  border-color: var(--color-hover);
+}
+.form-field:hover > .form-textarea {
+  border-color: var(--color-hover);
 }
 
 .form-field + .form-field {
@@ -436,6 +447,7 @@ img {
   outline: none;
 
   cursor: inherit;
+  transition: border-color var(--time) var(--cubic);
 }
 
 .form-svg {
@@ -443,15 +455,26 @@ img {
   transform: translate(0, 50%);
   bottom: 50%;
   left: 11px;
+  transition: fill var(--time) var(--cubic);
 }
 .form-textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   min-height: 120px;
-
+  padding: 12px 16px;
   cursor: inherit;
 
   outline: none;
+  transition: border-color var(--time) var(--cubic);
+}
+
+.form-textarea::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 .checkbox {
   margin-top: 20px;
@@ -470,6 +493,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .checkbox-input {
@@ -492,6 +516,9 @@ img {
   height: 15px;
   border: 2px solid var(--main-color);
   border-radius: 4px;
+  transition: border-color var(--time) var(--cubic),
+    background-color var(--time) var(--cubic),
+    background-image var(--time) var(--cubic);
 }
 .checkbox-linc {
   text-decoration: none;
