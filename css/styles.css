@@ -520,6 +520,7 @@ img {
     background-color var(--time) var(--cubic),
     background-image var(--time) var(--cubic);
 }
+
 .checkbox-linc {
   text-decoration: none;
   color: var(--color-logo-two);
@@ -544,6 +545,8 @@ img {
 
   border: none;
 
+  font-family: inherit;
+  font-style: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -889,7 +892,7 @@ img {
   background-color: var(--color-hover);
 }
 
-.e-mail-input__text {
+.e-mail-futer-text {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -902,11 +905,83 @@ img {
   color: var(--color-logo-three);
 }
 
-.e-mail-input__form {
-  list-style-type: none;
+.e-mail-futer-form {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.e-mail-form-field {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+
+  margin-right: 12px;
+}
+/* .e-mail-label {
+  position: absolute;
+  left: 16px;
+  bottom: 50%;
+  transform: translateY(50%);
+} */
+.e-mail-form-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: transparent;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  min-width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+}
+.e-mail-form-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.e-mail-button {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 0px 28px;
+
+  border: none;
+
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-button-one);
+
+  background-color: #188ce8;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+.e-mail-button-text {
+  margin-right: 10px;
 }
 /*  Основной контент portfolio */
 /* Кнопки */
