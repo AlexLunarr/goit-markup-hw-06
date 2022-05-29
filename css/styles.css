@@ -844,10 +844,6 @@ img {
 .address-item-link:focus {
   color: var(--color-hover);
 }
-.social {
-  margin-right: 93px;
-}
-
 .social-text {
   display: block;
   font-weight: 700;
@@ -892,6 +888,9 @@ img {
   background-color: var(--color-hover);
 }
 
+.e-mail-futer {
+  margin-left: auto;
+}
 .e-mail-futer-text {
   display: block;
   font-weight: 700;
